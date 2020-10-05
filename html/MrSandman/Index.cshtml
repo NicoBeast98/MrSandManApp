@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    <link href="~/Content/simul.css" rel="stylesheet" />
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="agrupar">
+    <header>
+        <h1>Demostration</h1>
+        <h2>_Mr.Sandman_<br>Healthcare Assistant</h2>
+        <form>
+            Astronaut > [Nombre Astronauta]
+        </form>
+    </header>
+
+    <form class="seccion">
+        <p>Heartbeat: <input type="number" id="Pulse" min="40" max="200" /> <br /> Food: <input type="number" id="Food" min="0" max="200" /> <br /> <br />  <button type="button" onclick="SumbitMR()">SEND</button></p>
+    </form>
+    <h6>Attention! This is just a demo.<br>There is no interface designed yet</h6>
+</div>
+<div class="terminal">
+    <div id="response">
+    </div>
+    <div class="line" id="consolee">
+        <div>Mr.Sandman>/</div>
+        <br />
+    </div>
+    <div class='gif'>
+        <img src='~/Images/hb.gif'>
+    </div>
+</div>
+
+<script>
+    function SumbitMR() {
+        var url = "/MrSandman/Main?Pulse=" + $('#Pulse').val() + "&FoodID=" + $('#Food').val();
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            success: function (result) {
+                $("#consolee").append("<div>Mr.Sandman - Sleep >/ " + result[0] + "</div><div>Mr.Sandman - Exercise >/" + result[1] + "</div><br />");
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Error al consultar datos");
+            }
+        });
+    };
+</script>
