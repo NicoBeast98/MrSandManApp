@@ -1,0 +1,75 @@
+body{
+    background-image: url(images/C64-Monitor.png);
+    background-repeat: no-repeat;
+    height: 1200px;
+    width: 100%;
+    background-color: #08260e;
+    background-size: cover;
+    background-position: auto;
+}
+.agrupar{
+    font-family: "Lucida Console", Monaco, monospace;
+    border: 5px solid #1A9000;
+    padding: 15px;
+    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: #1A9000;
+    text-shadow: 1px 1px 2px black; 
+}
+.agrupar h1{
+    text-align: center;
+}
+.agrupar input{
+    color: #1A9000;
+    background: transparent;
+    width: 75px;
+    text-align: center;
+    border: 1px solid #1A9000;
+}
+.agrupar button{
+    width: 75px;
+    background:#1A9000;
+    border: 1px solid white;
+}
+.gif{
+    background-image: url(images/hb.gif);
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+}
+.terminal{
+    background: black;
+    color: #1A9000;
+    font: courier;
+    padding: 10px;
+    height: 720px;
+    overflow: hidden;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 16%;
+}
+.line{
+    display: table;
+    width: 100%;
+    top: 30%;
+    right: 30%;
+}
+.terminal span{
+    display:table-cell;
+    width:1px;
+}
+.terminal input{
+    display:table-cell; 
+    width:100%;
+    border: none;
+    background: black;
+    color: white;
+    outline: none;
+}
+.path{
+    width: 100%;
+}

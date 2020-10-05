@@ -1,0 +1,128 @@
+section article hgroup h1{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 0.4px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    
+    color: rgb(255, 255, 255);
+    
+    
+    
+    margin-bottom: 20px;
+}
+
+}
+header,section,footer,aside,hgroup{
+    display: block;
+}
+body{
+    text-align: center;
+    margin: 20px auto;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(116, 115, 115);
+    
+}
+
+.agrupar {
+    width: 100%;
+    height: 100%;
+   
+    background-image: url("images/index.jpg");
+}
+.image {
+    border-radius: 50%;
+    width: 400px;
+    display: block;
+    margin:20px auto;
+    border: rgb(0, 0, 0):
+  }
+.cabecera{
+    
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+}
+.cabecera h1{
+    font-size: 40px;
+}
+.seccion{
+   
+   margin-bottom: 100px; 
+    
+}
+.seccion div{
+    margin-top: 40px;
+    color: white;
+}
+input{
+    margin: 40px auto;
+    padding: 8px;
+    margin-top: 2px; 
+}
+
+
+article {
+    color: rgb(255, 255, 255);
+    
+}
+article h2{
+    font-size: 40px;
+}
+
+address{
+    color: black;
+
+}
+.pie{
+  
+  clear: both;  
+  border-top:6px solid black;
+  background-color: rgb(109, 122, 122);
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  
+}
+.btn-boton {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+	background-color: #888888;
+	border-color: #7b7b7b;
+    color:#FFFFFF;
+    padding: 23px;
+    background:#84919c;
+    margin-top: 40px;
+    border-radius: 19px 19px 19px 19px;
+    -moz-border-radius: 19px 19px 19px 19px;
+    -webkit-border-radius: 19px 19px 19px 19px;
+    border: 10px ridge #2e527a;
+    margin-left:40%;
+    margin-right:40%;
+}
+.btn-boton:hover,
+.btn-boton:focus,
+.btn-boton:active,
+.btn-boton.active {
+	background-color: #787878;
+	border-color: #606060;
+	color:#FFFFFF;
+}
+.btn-boton.disabled:hover,
+.btn-boton.disabled:focus,
+.btn-boton.disabled:active,
+.btn-boton.disabled.active,
+.btn-boton[disabled]:hover,
+.btn-boton[disabled]:focus,
+.btn-boton[disabled]:active,
+.btn-boton[disabled].active,
+fieldset[disabled] .btn-boton:hover,
+fieldset[disabled] .btn-boton:focus,
+fieldset[disabled] .btn-boton:active,
+fieldset[disabled] .btn-boton.active {
+	background-color: #888888;
+	border-color: #7b7b7b;
+	color:#FFFFFF;
+}
